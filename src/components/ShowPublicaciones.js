@@ -40,8 +40,8 @@ const ShowPublicaciones = () => {
                     <th>Titulo</th>
                     <th>Contenido</th>
                     <th>Imagen</th>
+                    <th>ID_Autor</th>
                     <th>Accion</th>
-
                 </tr>
             </thead>
             <tbody>
@@ -50,7 +50,7 @@ const ShowPublicaciones = () => {
                         <td> {publicaciones.titulo}</td>
                         <td> {publicaciones.contenido}</td>
                         <td> {publicaciones.imagen}</td>
-
+                        <td> {publicaciones.autor_id}</td>
                         <td>
                             <Link to={`/editar/${publicaciones.id}`} className='btn btn-warning'>Editar</Link>
                             <button onClick={()=>deletePublicaciones(publicaciones.id) } className='btn btn-danger' >Eliminar</button>
